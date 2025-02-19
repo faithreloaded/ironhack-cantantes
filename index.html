@@ -3,30 +3,72 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Índice de Artistas</title>
+    <title>Noticiero & Cantantes</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Índice de Artistas</h1>
-    <ul class="artistas">
-        <li>
-            <a href="boyz.html">
-                <img src="images/boyz.jpeg" alt="Boyz">
-                Boyz
-            </a>
-        </li>
-        <li>
-            <a href="mozart.html">
-                <img src="images/mozart.jpg" alt="Mozart">
-                Mozart
-            </a>
-        </li>
-        <li>
-            <a href="vivaldi.html">
-                <img src="images/vivaldi.jpg" alt="Vivaldi">
-                Vivaldi
-            </a>
-        </li>
-    </ul>
+
+    <header>
+        <h1>🎶 Noticiero & Cantantes 🎤</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="#cantantes">Cantantes</a></li>
+                <li><a href="#noticias">Noticias</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="cantantes">
+        <h2>🎵 Cantantes 🎤</h2>
+        <div class="cantantes-container">
+            <div class="cantante">
+                <a href="boyz.html">
+                    <img src="images/boyz.jpeg" alt="Boyz II Men">
+                    <h3>Boyz II Men</h3>
+                </a>
+                <p>Grandes éxitos del R&B.</p>
+            </div>
+            <div class="cantante">
+                <a href="mozart.html">
+                    <img src="images/mozart.jpg" alt="Mozart">
+                    <h3>Mozart</h3>
+                </a>
+                <p>Genio de la música clásica.</p>
+            </div>
+            <div class="cantante">
+                <a href="vivaldi.html">
+                    <img src="images/vivaldi.jpg" alt="Vivaldi">
+                    <h3>Vivaldi</h3>
+                </a>
+                <p>Maestro del barroco.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="noticias">
+        <h2>📰 Noticias</h2>
+        <article>
+            <h3 id="nacional">🇪🇸 Nacional</h3>
+            <p>Últimas noticias sobre política y economía en España...</p>
+        </article>
+        <article>
+            <h3 id="internacional">🌍 Internacional</h3>
+            <p>Noticias sobre eventos y conflictos globales...</p>
+        </article>
+        <article>
+            <h3 id="cultura">🎭 Cultura</h3>
+            <p>Descubre las novedades en cine, música y arte...</p>
+        </article>
+        <article>
+            <h3 id="deportes">⚽ Deportes</h3>
+            <p>Resultados, fichajes y todo sobre el mundo deportivo...</p>
+        </article>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Noticiero & Cantantes</p>
+    </footer>
+
 </body>
 </html>

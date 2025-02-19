@@ -1,56 +1,144 @@
-body {
-  font-family: sans-serif;
-  margin: 40px;
-  line-height: 1.6;
-  text-align: center;
-}
-
-h1, h2 {
-  color: #222;
-}
-
-ul {
-  list-style: none;
+/* Reset */
+* {
+  margin: 0;
   padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
 }
 
-.artistas {
+/* Header */
+header {
+  background-image: url('images/header.jpg');
+  background-size: cover;
+  background-position: center;
+  color: black;
+  text-align: center;
+  padding: 40px 20px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: white;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Menú */
+nav ul {
   display: flex;
   justify-content: center;
   gap: 20px;
+  list-style: none;
+  margin-top: 10px;
 }
 
-.artistas li {
-  background: #f3f3f3;
-  padding: 10px 15px;
-  border-radius: 8px;
+nav a {
+  color: #007aff;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 6px 14px;
+  border-radius: 6px;
+  transition: background 0.3s;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Secciones más altas */
+section {
+  padding: 40px 20px;
+  max-width: 800px;
+  margin: auto;
+  color: black;
+  min-height: 80vh;
+}
+
+/* Cantantes */
+.cantante {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   text-align: center;
+  gap: 10px;
+  margin-bottom: 20px;
+  padding: 20px;
+  background: #f9f9f9;
+  border-radius: 8px;
 }
 
-.artistas img {
-  width: 100px;
-  height: 100px;
+.cantante img {
+  width: 150px;
+  height: 150px;
   object-fit: cover;
   border-radius: 50%;
-  display: block;
-  margin: 0 auto 10px;
 }
 
-.artist-img {
-  width: 200px;
-  height: 200px;
-  object-fit: cover;
+/* Noticias */
+article {
+  background: #f4f4f4;
+  padding: 20px;
+  margin-bottom: 16px;
+  border-radius: 8px;
+}
+
+article h4 {
+  font-size: 20px;
+  margin-bottom: 8px;
+}
+
+article p {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #222;
+  color: white;
+  margin-top: 40px;
+}
+.cantantes-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.cantante {
+  text-align: center;
+  width: 220px;
+}
+
+.cantante img {
+  width: 100%;
   border-radius: 10px;
-  display: block;
-  margin: 10px auto;
+  transition: 0.3s;
 }
 
-a {
-  text-decoration: none;
-  color: #0077ff;
-  font-weight: bold;
+.cantante img:hover {
+  transform: scale(1.05);
 }
 
-a:hover {
-  text-decoration: underline;
+.artist-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+}
+
+.artist-card {
+  background: white;
+  padding: 30px;
+  text-align: center;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.artist-image {
+  width: 250px;
+  height: 250px;
+  border-radius: 10px;
+  object-fit: cover;
 }
